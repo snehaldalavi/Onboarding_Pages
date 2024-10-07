@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Fourth Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    
+  </head>
+  <body>
+
+    <header class="py-4 px-5 sticky top-0 bg-gradient-to-b from-sky-100 to-sky-50 lg:px-10">
+        <div class="flex items-center justify-between">
+            <nav class="md:flex lg:flex xl:flex gap-4 lg:gap-10 hidden">
+                <a href="#" class="text-black-50 text-sm font-medium ">Home</a>
+                <a href="#" class="text-black-50 text-sm font-medium ">About</a>
+                <a href="#" class="text-black-50 text-sm font-medium ">Services</a>
+                <a href="#" class="text-black-50 text-sm font-medium ">Career</a>
+                <a href="#" class="text-black-50 text-sm font-medium ">Contact</a>
+            </nav>
+            <button id="toggleButton" class="block md:hidden lg:hidden"><i class="fa-solid fa-bars"></i></button>
+            <ul class="hidden list-none px-2 py-1 bg-blue-100" id="menu">
+                <li><a href="#" class="text-black-50 text-base">Home</a></li>
+                <li><a href="#" class="text-black-50 text-base">About</a></li>
+                <li><a href="#" class="text-black-50 text-base">Services</a></li>
+                <li><a href="#" class="text-black-50 text-base">Career</a></li>
+                <li><a href="#" class="text-black-50 text-base">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="px-5 lg:px-10">
+
+        <div class="flex flex-col gap-5 md:flex-row md:gap-5 py-3 md:py-6">
+
+            <div class="flex flex-col gap-5 lg:gap-10 h-full sticky top-20">
+                <p class="text-black-100 text-2xl font-bold lg:text-3xl">Logo</p>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-solid fa-cubes text-black-50"></i>
+                    <p class="text-base font-bold">Dashboard</p>
+                </div>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-regular fa-bell text-black-50"></i>
+                    <p class="text-black-50 text-base font-medium">Content</p>
+                </div>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-solid fa-puzzle-piece text-black-50"></i>
+                    <p class="text-base text-black-50 font-semibold">Components</p>
+                </div>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-solid fa-file-invoice text-black-50"></i>
+                    <p class="text-base text-black-50 font-semibold">Accounts & Management</p>
+                </div>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-solid fa-gear text-black-50"></i>
+                    <p class="text-base text-black-50 font-semibold">Configuration</p>
+                </div>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-regular fa-user text-black-50"></i>
+                    <p class="text-base text-black-50 font-semibold">Utilities</p>
+                </div>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-solid fa-gears text-black-50"></i>
+                    <p class="text-base text-black-50 font-semibold">System</p>
+                </div>
+                <div class="flex items-center gap-3 transition duration-500 transform hover:scale-125 ease-out">
+                    <i class="fa-solid fa-calculator text-black-50"></i>
+                    <p class="text-base text-black-50 font-semibold">Calculator</p>
+                </div>
+                
+            </div>
+
+            <div class="bg-gray-100 shadow-lg py-10 px-5">
+
+                <div class="grid grid-cols-1 gap-5 lg:grid-cols-6 md:gap-7">
+                    <div class="bg-white px-3 py-1 rounded-md shadow-sm flex items-center gap-2 lg:py-2 hover:shadow-xl transition duration-700 transform hover:scale-105 ease-out">
+                        <img src="images/istockphoto-539239314-1024x1024.jpg" class="w-8 h-8">
+                        <div>
+                            <p class="text-base font-bold lg:text-lg">$3,458.00</p>
+                            <p class="text-sm text-gray-400 -mt-1 lg:text-base">weekly sale</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-3 py-1 rounded-md shadow-sm flex items-center gap-2 lg:py-2 hover:shadow-xl  transition duration-700 transform hover:scale-105 ease-out">
+                        <img src="images/istockphoto-539239314-1024x1024.jpg" class="w-8 h-8">
+                        <div>
+                            <p class="text-base font-bold lg:text-lg">$43, 567,43</p>
+                            <p class="text-sm text-gray-400 -mt-1 lg:text-base">monthly sale</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-3 py-1 rounded-md shadow-sm flex items-center gap-2 lg:py-2 hover:shadow-xl  transition duration-700 transform hover:scale-105 ease-out">
+                        <img src="images/istockphoto-539239314-1024x1024.jpg" class="w-8 h-8">
+                        <div>
+                            <p class="text-base font-bold lg:text-lg">2304</p>
+                            <p class="text-sm text-gray-400 -mt-1 lg:text-base">Unique visitors</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-3 py-1 rounded-md shadow-sm flex items-center gap-3 lg:pl-4 lg:pr-16 lg:py-2  hover:shadow-xl  transition duration-700 transform hover:scale-105 ease-out">
+                        <img src="images/istockphoto-539239314-1024x1024.jpg" class="w-8 h-8">
+                        <div>
+                            <p class="text-base font-bold lg:text-lg">30240</p>
+                            <p class="text-sm text-gray-400 -mt-1 lg:text-base">views</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-3 py-1 rounded-md shadow-sm flex items-center gap-2 lg:py-2 hover:shadow-xl  transition duration-700 transform hover:scale-105 ease-out">
+                        <img src="images/istockphoto-539239314-1024x1024.jpg" class="w-8 h-8">
+                        <div>
+                            <p class="text-base font-bold lg:text-lg">2304</p>
+                            <p class="text-sm text-gray-400 -mt-1 lg:text-base">Unique visitors</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-3 py-1 rounded-md shadow-sm flex items-center gap-2 lg:py-2 hover:shadow-xl  transition duration-700 transform hover:scale-105 ease-out">
+                        <img src="images/istockphoto-539239314-1024x1024.jpg" class="w-8 h-8">
+                        <div>
+                            <p class="text-base font-bold lg:text-lg">2304</p>
+                            <p class="text-sm text-gray-400 -mt-1 lg:text-base">Unique visitors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mt-7 md:gap-5 lg:grid-cols-10 lg:gap-4">
+                    <div class="bg-white px-3 py-2 rounded-md flex flex-col items-center justify-center lg:px-5 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-solid fa-microchip text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Technologies</p>
+                    </div>
+                    <div class="bg-white px-5 py-2 rounded-md flex flex-col items-center justify-center lg:px-7 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-solid fa-user text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">User</p>
+                    </div>
+                    <div class="bg-white px-6 py-2 rounded-md flex flex-col items-center justify-center lg:px-8 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-regular fa-bookmark text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Libraries</p>
+                    </div>
+                    <div class="bg-white px-3 py-2 rounded-md flex flex-col items-center justify-center lg:px-5 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-solid fa-layer-group text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Platforms</p>
+                    </div>
+                    <div class="bg-white px-5 py-2 rounded-md flex flex-col items-center justify-center lg:px-6 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-solid fa-chart-simple text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Charts</p>
+                    </div>
+                    <div class="bg-white px-5 py-2 rounded-md flex flex-col items-center justify-center lg:px-6 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-solid fa-newspaper text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Articles</p>
+                    </div>
+                    <div class="bg-white px-5 py-2 rounded-md flex flex-col items-center justify-center lg:px-7 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-regular fa-star text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Scope</p>
+                    </div>
+                    <div class="bg-white px-3 py-2 rounded-md flex flex-col items-center justify-center hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-regular fa-comment text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Comments</p>
+                    </div>
+                    <div class="bg-white px-6 py-2 rounded-md flex flex-col items-center justify-center lg:px-8 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-solid fa-phone text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Support</p>
+                    </div>
+                    <div class="bg-white px-5 py-2 rounded-md flex flex-col items-center justify-center lg:px-7 lg:py-3 hover:shadow-xl hover:shadow-sky-200 transition duration-700 transform hover:scale-110 ease-out">
+                        <i class="fa-solid fa-location-dot text-2xl text-sky-600 lg:text-3xl"></i>
+                        <p class="text-sm text-gray-500 lg:text-base">Map</p>
+                    </div>
+                </div>
+
+                <div class="mt-10 lg:mt-20">
+                    <p class="text-xl text-black-50 font-bold text-left lg:text-left lg:text-xl">Selected Services</p>
+                    <p class="text-sm text-black-50 font-medium text-left">Find the services</p>
+                </div>
+
+                <div class="grid grid-cols-1 mt-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 lg:gap-6 gap-7 md:gap-2 lg:justify-end md:mt-3 lg:mt-3">
+            
+                    <div class="pr-24 pl-6 py-6 bg-gradient-to-b from-blue-50 to-sky-300 rounded-lg md:pl-4 md:pr-10 hover:shadow-xl hover:shadow-sky-500 transition duration-700 transform hover:scale-105 ease-out">
+                        <p class="text-2xl text-black-50 font-semibold md:text-2xl">Core Java</p>
+                        <p class="text-sm text-black-50 mt-6 md:mt-3">Free plan for all users</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <img src="images/download (2).png" class="w-6 h-6">
+                            <p class="text-lg text-black-50 font-medium">Core Java</p>
+                        </div>
+                        <a href="#"><button class="border-1 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full px-3 py-2 mt-3 text-xs font-medium">Get Started</button></a>
+                        <!-- <div class="mt-6 flex flex-col gap-2">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">2 Workspaces</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">10 Collaberators</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited Data</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unified Analytics</label>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+        
+                    <div class="pr-24 pl-6 py-6 bg-gradient-to-b from-blue-50 to-sky-300 rounded-lg md:pl-4 md:pr-10 hover:shadow-xl hover:shadow-sky-500 transition duration-700 transform hover:scale-105 ease-out">
+                        <p class="text-2xl text-black-50 font-semibold md:text-2xl">Python</p>
+                        <p class="text-sm text-black-50 mt-6 md:mt-3">Ideal for small business</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <img src="images/download.jfif" class="w-6 h-6">
+                            <p class="text-lg text-black-50 font-medium">Python</p>
+                        </div>
+                        <a><button class="bg-white border-1 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full px-3 py-2 mt-3 text-xs font-medium">Get Started</button></a>
+                        <!-- <div class="mt-6 flex flex-col gap-2">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited workspace</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited Collaberators</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">15GB Data Storage</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unified Analytics</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Mobile app access</label>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+        
+                    <div class="pr-24 pl-6 py-6 bg-gradient-to-b from-blue-50 to-sky-300 rounded-lg md:pl-4 md:pr-10 hover:shadow-xl hover:shadow-sky-500 transition duration-700 transform hover:scale-105 ease-out">
+                        <p class="text-2xl text-black-50 font-semibold md:text-2xl">VB.net</p>
+                        <p class="text-sm text-black-50 mt-6 md:mt-3">Ideal for small business</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <img src="images/images (2).png" class="w-6 h-6">
+                            <p class="text-lg text-black-50 font-medium">vb.net</p>
+                        </div>
+                        <a><button class="bg border-1 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full px-3 py-2 mt-3 text-xs font-medium">Get Started</button></a>
+                        <!-- <div class="mt-6 flex flex-col gap-2">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited workspace</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited Collaberators</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">15GB Data Storage</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unified Analytics</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Mobile app access</label>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+
+                    <div class="pr-24 pl-6 py-6 bg-gradient-to-b from-blue-50 to-sky-300 rounded-lg md:pl-4 md:pr-10 hover:shadow-xl hover:shadow-sky-500 transition duration-700 transform hover:scale-105 ease-out">
+                        <p class="text-2xl text-black-50 font-semibold md:text-2xl">Core Java</p>
+                        <p class="text-sm text-black-50 mt-6 md:mt-3">Free plan for all users</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <img src="images/download (2).png" class="w-6 h-6">
+                            <p class="text-lg text-black-50 font-medium">Core Java</p>
+                        </div>
+                        <a><button class="bg-white border-1 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full px-3 py-2 mt-3 text-xs font-medium">Get Started</button></a>
+                        <!-- <div class="mt-6 flex flex-col gap-2">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">2 Workspaces</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">10 Collaberators</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited Data</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unified Analytics</label>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+
+                    <div class="pr-24 pl-6 py-6 bg-gradient-to-b from-blue-50 to-sky-300 rounded-lg md:pl-4 md:pr-10 hover:shadow-xl hover:shadow-sky-500 transition duration-700 transform hover:scale-105 ease-out">
+                        <p class="text-2xl text-black-50 font-semibold md:text-2xl">Python</p>
+                        <p class="text-sm text-black-50 mt-6 md:mt-3">Ideal for small business</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <img src="images/download.jfif" class="w-6 h-6">
+                            <p class="text-lg text-black-50 font-medium">Python</p>
+                        </div>
+                        <a><button class="bg-white border-1 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full px-3 py-2 mt-3 text-xs font-medium">Get Started</button></a>
+                        <!-- <div class="mt-6 flex flex-col gap-2">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited workspace</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited Collaberators</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">15GB Data Storage</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unified Analytics</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Mobile app access</label>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+
+                    <div class="pr-24 pl-6 py-6 bg-gradient-to-b from-blue-50 to-sky-300 rounded-lg md:pl-4 md:pr-10 hover:shadow-xl hover:shadow-sky-500 transition duration-700 transform hover:scale-105 ease-out">
+                        <p class="text-2xl text-black-50 font-semibold md:text-2xl">VB.net</p>
+                        <p class="text-sm text-black-50 mt-6 md:mt-3">Ideal for small business</p>
+                        <div class="flex items-center gap-3 mt-3">
+                            <img src="images/images (2).png" class="w-6 h-6">
+                            <p class="text-lg text-black-50 font-medium">vb.net</p>
+                        </div>
+                        <a><button class="bg-white border-1 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full px-3 py-2 mt-3 text-xs font-medium">Get Started</button></a>
+                        <!-- <div class="mt-6 flex flex-col gap-2">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited workspace</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unlimited Collaberators</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">15GB Data Storage</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Unified Analytics</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" class="w-4 h-4 rounded-full">
+                                <label class="text-black-50 text-sm font-medium">Mobile app access</label>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+        
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10 lg:mt-20">
+
+                    <div class="lg:w-full col-span-2">
+                        <p class="text-xl font-bold text-black-50">Another Chart</p>
+                        <div class="w-full bg-white rounded-2xl border-2 border-blue-300 mt-3 p-5">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <p class="text-xl font-bold">Visitor by Country</p>
+                        <div class="p-5 bg-white rounded-2xl border-2 border-blue-300 mt-3">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-10 mt-10 lg:mt-20">
+
+                    <div>
+
+                        <div class="flex items-center justify-between">
+                            <p class="text-black-50 text-sm font-medium md:text-base xl:text-xl">Latest Order</p>
+                            <p class="text-green-400 text-xs font-medium md:text-base">3 Orders</p>
+                        </div>
+                       
+                        <div class="bg-white rounded-md px-2 py-2 flex items-center gap-5 mt-3 lg:gap-7 xl:gap-20">
+                            <div class="flex items-center gap-3 xl:gap-6">
+                                <p class="text-black-50 text-sm font-medium xl:text-base">ID</p>
+                                <p class="text-black-50 text-sm font-medium xl:text-base">Customer</p>
+                            </div>
+                            <div class="flex items-center gap-3 xl:gap-10 lg:gap-6">
+                                <p class="text-black-50 text-sm font-medium">Status</p>
+                                <p class="text-black-50 text-sm font-medium">Date Added</p>
+                                <p class="text-black-50 text-sm font-medium">Total</p>
+                            </div>
+                        </div>
+                       
+                        <div class="bg-white rounded-md px-2 py-2 flex items-center gap-2 mt-2 lg:gap-6 xl:gap-10">
+                            <div class="flex items-center gap-2 xl:gap-4">
+                                <p class="text-gray-300 text-xs font-medium xl:text-base md:text-xs">354</p>
+                                <p class="text-gray-400 text-xs font-medium md:text-sm lg:text-xs xl:text-base">Daniel Gibson</p>
+                            </div>
+                            <div class="flex items-center gap-3 lg:gap-4 xl:gap-8">
+                                <p class="text-purple-400 text-xs font-medium xl:text-base">Review</p>
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base ">04-11-2018</p>
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">$458.40</p>
+                                <div class="flex items-center gap-1 xl:gap-6">
+                                    <i class="fa-solid fa-newspaper text-gray-300 text-xs font-medium lg:text-xs xl:text-base"></i>
+                                    <i class="fa-solid fa-trash text-gray-300 text-xs font-medium lg:text-xs xl:text-base"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-md px-2 py-2 flex items-center gap-2 mt-2 lg:gap-6 xl:gap-10">
+                            <div class="flex items-center gap-2  xl:gap-4">
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">354</p>
+                                <p class="text-gray-400 text-xs font-medium md:text-sm lg:text-xs xl:text-base">Daniel Gibson</p>
+                            </div>
+                            <div class="flex items-center gap-3 lg:gap-4  xl:gap-8">
+                                <p class="text-red-400 text-xs font-medium xl:text-base">Ongoing</p>
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">04-11-2018</p>
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">$458.40</p>
+                                <div class="flex items-center gap-1 xl:gap-6">
+                                    <i class="fa-solid fa-newspaper text-gray-300 text-xs font-medium lg:text-xs xl:text-base"></i>
+                                    <i class="fa-solid fa-trash text-gray-300 text-xs font-medium lg:text-xs xl:text-base"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-md px-2 py-2 flex items-center gap-2 mt-2 lg:gap-4 xl:gap-10">
+                            <div class="flex items-center gap-2 xl:gap-4">
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">354</p>
+                                <p class="text-gray-400 text-xs font-medium md:text-sm lg:text-xs xl:text-base">Daniel Gibson</p>
+                            </div>
+                            <div class="flex items-center gap-3 lg:gap-4 xl:gap-8">
+                                <p class="text-green-400 text-xs font-medium xl:text-base">Completed</p>
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">04-11-2018</p>
+                                <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">$458.40</p>
+                                <div class="flex items-center gap-1 xl:gap-6">
+                                    <i class="fa-solid fa-newspaper text-gray-300 text-xs font-medium lg:text-xs xl:text-base"></i>
+                                    <i class="fa-solid fa-trash text-gray-300 text-xs font-medium lg:text-xs xl:text-base"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-black-50 text-sm font-medium xl:text-xl">Users</p>
+                            <p class="text-gray-400 text-xs font-medium lg:text-base">Last 24 Hours</p>
+                        </div>
+                        <div class="mt-3 bg-white rounded-md px-2 py-2 flex flex-col gap-3">
+
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="images/pexels-olly-774909.jpg" class="w-8 h-8 rounded-full lg:w-9 lg:h-9">
+                                    <div>
+                                        <p class="text-black-50 text-sm font-medium xl:text-base">Stephn Nguyen</p>
+                                        <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-sm">Developer</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="no-underline"><button class=" bg-gradient-to-r from-pink-100 to-pink-200 px-2 py-1 rounded-md text-green-600 text-sm">Online</button></a>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="images/pexels-olly-774909.jpg" class="w-8 h-8 rounded-full lg:w-9 lg:h-9">
+                                    <div>
+                                        <p class="text-black-50 text-sm font-medium xl:text-base">Stephn Nguyen</p>
+                                        <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-sm">Developer</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="no-underline"><button class="bg-gradient-to-r from-pink-100 to-pink-200 px-2 py-1 rounded-md text-green-600 text-sm">Online</button></a>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="images/pexels-olly-774909.jpg" class="w-8 h-8 rounded-full lg:w-9 lg:h-9">
+                                    <div>
+                                        <p class="text-black-50 text-sm font-medium xl:text-base">Stephn Nguyen</p>
+                                        <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-sm">Developer</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="no-underline"><button class=" bg-gradient-to-r from-pink-100 to-pink-200 px-2 py-1 rounded-md text-green-600 text-sm">Online</button></a>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="images/pexels-olly-774909.jpg" class="w-8 h-8 rounded-full lg:w-9 lg:h-9">
+                                    <div>
+                                        <p class="text-black-50 text-sm font-medium xl:text-base">Stephn Nguyen</p>
+                                        <p class="text-gray-300 text-xs font-medium lg:text-xs xl:text-base">Developer</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="no-underline"><button class="bg-gradient-to-r from-pink-100 to-pink-200 px-2 py-1 rounded-md text-green-600 text-sm">Online</button></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+  </body>
+</html>
+    <script>
+
+        // bars
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+
+    // Pie chart
+
+        var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+        var yValues = [55, 49, 44, 24, 15];
+        var barColors = [
+        "#abd4bf",
+        "#df95a8",
+        "#c0edec",
+        "#bfd5f7",
+        "#ffe2db"
+        ];
+
+        new Chart("pieChart", {
+        type: "pie",
+        data: {
+            labels: xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+        },
+        options: {
+            title: {
+            display: true,
+            text: "World Wide Wine Production 2018"
+            }
+        }
+    });
+    </script>
